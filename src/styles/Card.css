@@ -1,0 +1,22 @@
+.card{
+    background-color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 0 0 black;
+}
+
+.card:hover{
+    cursor: grab;
+}
+
+.draggable:active{
+    cursor : -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.dragged-card{
+    cursor : -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}

@@ -1,0 +1,17 @@
+.column{
+    background-color: #dfe3e6;
+    width: 15rem;
+}
+
+.column > div{
+    padding: 0.2rem 1rem;
+}
+
+.bottom{
+    margin-bottom: 1rem;
+}
+
+.title{
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}

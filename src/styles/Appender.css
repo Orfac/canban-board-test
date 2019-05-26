@@ -1,0 +1,17 @@
+.appender{
+    color: grey;
+}
+
+
+.appender-opened > textarea{
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.appender-opened > button {
+    padding: 0.4rem 0.6rem;
+    background-color: #39c071;
+    color: white;
+}

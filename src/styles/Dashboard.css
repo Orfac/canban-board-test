@@ -1,0 +1,10 @@
+.dashboard{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.dashboard > div {
+    flex-grow: 0; /* default 0 */ 
+    margin-left: 1rem;
+    border-radius: 0.2rem;
+}
