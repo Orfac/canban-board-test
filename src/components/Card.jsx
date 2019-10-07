@@ -9,9 +9,12 @@ export default class Card extends Component {
 
   dragStart(e){
     e.dataTransfer.effectAllowed = "all";
+    let data = e.target.innerText;
     e.dataTransfer.setData("title", e.target.innerText);
+    console.log(data);
     e.currentTarget.classList.add("dragged-card");
     this.props.takeCard(this.props.index);
+    console.log(data);
   }
   render() {
     return (
