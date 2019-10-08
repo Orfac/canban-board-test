@@ -5,6 +5,7 @@ export default class Card extends Component {
   constructor(props){
     super(props);
     this.dragStart = this.dragStart.bind(this);
+    this.dragEnd = this.dragEnd.bind(this);
   }
 
   dragStart(e){
@@ -13,18 +14,26 @@ export default class Card extends Component {
     e.dataTransfer.setData("title", e.target.innerText);
     console.log(data);
     e.currentTarget.classList.add("dragged-card");
-    this.props.takeCard(this.props.index);
+
     console.log(data);
   }
+
+  dragEnd(e){
+    this.props.takeCard(this.props.index);
+  }
+
   render() {
     return (
       <div 
         className="card draggable" 
         draggable="true" 
         onDragStart={this.dragStart}
+        onDragEnd={this.dragEnd}
       >
         {this.props.title}
       </div>
     )
   }
+
+
 }
