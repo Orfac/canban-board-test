@@ -3,10 +3,11 @@
 }
 
 .appender:hover{
-    background-color: #B6C0C9;
+    background-color: #8396A5;
     color: white;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     cursor: pointer;
+    padding: 0.3rem;
 }
 
 .appender-opened > textarea{
