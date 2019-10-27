@@ -1,7 +1,15 @@
 .appender{
     color: grey;
+    
 }
 
+.appender:hover{
+    background-color: #B6C0C9;
+    color: white;
+    position: relative;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
 
 .appender-opened > textarea{
     background-color: white;
