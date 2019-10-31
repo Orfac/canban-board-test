@@ -40,22 +40,20 @@ export default class Appender extends Component {
                 {isOpened ? (
                     <div className="appender-opened">
                         <textarea 
-                            cols="5" 
-                            rows="3"
                             value={this.state.value} 
                             onChange={this.handleChangeText} 
                             placeholder={this.props.openedText}
                             
                         >
                         </textarea>
-
+                        <br></br>
                         <button onClick={this.handleAppendClick}>
                             <b>{this.props.buttonText}</b> 
                         </button>
                         <span><button onClick={this.handleOpenClick}>Убрать</button></span>
                     </div>
                 ) : (
-                    <div onClick={this.handleOpenClick}>
+                    <div className="appender-closed" onClick={this.handleOpenClick}>
                         {this.props.closedText}
                     </div>
                 )}

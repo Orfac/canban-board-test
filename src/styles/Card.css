@@ -7,9 +7,7 @@
 
 .card:hover{
     cursor: grab;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
-    transform: scale(1.005);;
+    background-color: #dfe3e6;
 }
 
 .draggable:active{
